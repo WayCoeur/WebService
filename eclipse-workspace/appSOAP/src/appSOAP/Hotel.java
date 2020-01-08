@@ -7,17 +7,12 @@ import javax.jws.WebService;
 	@WebService	
 
 	public class Hotel {
-		
-		 Chambre room;
 		String name;
-		
-		
-		
-	@WebMethod
 
-		
-		public Chambre SendFreeRoom() {
-			return room;
+		@WebMethod
+
+		public Chambre getRoom() {
+				return new Chambre();
 		}
 
 	}

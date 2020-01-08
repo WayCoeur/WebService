@@ -1,20 +1,24 @@
 package appSOAP;
 import javax.jws.WebMethod;
 import javax.jws.WebService;
-import javax.jws.WebMethod;
 
 @WebService	
 
 public class Chambre {
 	
-	float prix =35;
-	int number = 12;
-	String type="basique";
-	boolean occupe= true;
-	
-	
-	
-@WebMethod
+	private float prix;
+	private int number;
+	private String type;
+	private boolean occupe;
+
+	public Chambre() {
+		this.prix = 35;
+		this.number = 12;
+		this.type = "basique";
+		this.occupe = true;
+	}
+
+	@WebMethod
 
 	public float getPrix() {
 		return prix;
@@ -28,11 +32,5 @@ public class Chambre {
 	public void setType(String type) {
 		this.type = type;
 	}
-	
-	
-	public String SendType() {
-		return type;
-	}
-
 }
 
