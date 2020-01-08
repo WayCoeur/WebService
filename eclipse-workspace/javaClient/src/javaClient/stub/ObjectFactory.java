@@ -24,8 +24,8 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _GetRoomResponse_QNAME = new QName("http://appSOAP/", "getRoomResponse");
-    private final static QName _GetRoom_QNAME = new QName("http://appSOAP/", "getRoom");
+    private final static QName _GetChambre_QNAME = new QName("http://appSOAP/", "getChambre");
+    private final static QName _GetChambreResponse_QNAME = new QName("http://appSOAP/", "getChambreResponse");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: javaClient.stub
@@ -35,19 +35,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link GetRoom }
+     * Create an instance of {@link GetChambre }
      * 
      */
-    public GetRoom createGetRoom() {
-        return new GetRoom();
+    public GetChambre createGetChambre() {
+        return new GetChambre();
     }
 
     /**
-     * Create an instance of {@link GetRoomResponse }
+     * Create an instance of {@link GetChambreResponse }
      * 
      */
-    public GetRoomResponse createGetRoomResponse() {
-        return new GetRoomResponse();
+    public GetChambreResponse createGetChambreResponse() {
+        return new GetChambreResponse();
     }
 
     /**
@@ -59,21 +59,21 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetRoomResponse }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetChambre }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://appSOAP/", name = "getRoomResponse")
-    public JAXBElement<GetRoomResponse> createGetRoomResponse(GetRoomResponse value) {
-        return new JAXBElement<GetRoomResponse>(_GetRoomResponse_QNAME, GetRoomResponse.class, null, value);
+    @XmlElementDecl(namespace = "http://appSOAP/", name = "getChambre")
+    public JAXBElement<GetChambre> createGetChambre(GetChambre value) {
+        return new JAXBElement<GetChambre>(_GetChambre_QNAME, GetChambre.class, null, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetRoom }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetChambreResponse }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://appSOAP/", name = "getRoom")
-    public JAXBElement<GetRoom> createGetRoom(GetRoom value) {
-        return new JAXBElement<GetRoom>(_GetRoom_QNAME, GetRoom.class, null, value);
+    @XmlElementDecl(namespace = "http://appSOAP/", name = "getChambreResponse")
+    public JAXBElement<GetChambreResponse> createGetChambreResponse(GetChambreResponse value) {
+        return new JAXBElement<GetChambreResponse>(_GetChambreResponse_QNAME, GetChambreResponse.class, null, value);
     }
 
 }

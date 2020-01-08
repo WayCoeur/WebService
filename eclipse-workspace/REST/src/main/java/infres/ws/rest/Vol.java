@@ -1,8 +1,10 @@
 package infres.ws.rest;
 
 import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 import java.util.Date;
-
+@XmlRootElement(name = "Vol")
 public class Vol {
 
     private long id;
@@ -23,22 +25,22 @@ public class Vol {
         this.date = new Date();
     }
 
-    @XmlAttribute
+    @XmlElement(name="Company")
     public Company getCompany() {
         return company;
     }
 
-    @XmlAttribute
+    @XmlElement(name = "Place")
     public Place getPlace() {
         return place;
     }
 
-    @XmlAttribute
+    @XmlElement(name = "Prix")
     public Integer getPrix() {
         return prix;
     }
 
-    @XmlAttribute
+    @XmlElement(name = "Date")
     public Date getDate() {
         return date;
     }

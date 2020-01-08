@@ -18,7 +18,7 @@ public class VolController {
     @GetMapping("/{id}")
     public String getVol(@PathVariable Long id) throws JAXBException {
         Vol vol = new Vol();
-        JAXBContext context = JAXBContext.newInstance(Vol.class);
+        JAXBContext context = JAXBContext.newInstance(Vol.class,Place.class,Company.class);
         Marshaller mar= context.createMarshaller();
         mar.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
         StringWriter sw = new StringWriter();

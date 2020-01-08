@@ -16,6 +16,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
+ *         &lt;element name="occupe" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
  *         &lt;element name="prix" type="{http://www.w3.org/2001/XMLSchema}float"/>
  *         &lt;element name="type" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *       &lt;/sequence>
@@ -28,13 +29,31 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "chambre", propOrder = {
+    "occupe",
     "prix",
     "type"
 })
 public class Chambre {
 
+    protected boolean occupe;
     protected float prix;
     protected String type;
+
+    /**
+     * Obtient la valeur de la propriété occupe.
+     * 
+     */
+    public boolean isOccupe() {
+        return occupe;
+    }
+
+    /**
+     * Définit la valeur de la propriété occupe.
+     * 
+     */
+    public void setOccupe(boolean value) {
+        this.occupe = value;
+    }
 
     /**
      * Obtient la valeur de la propriété prix.

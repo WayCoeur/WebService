@@ -1,7 +1,5 @@
 package appSOAP;
 import javax.xml.ws.Endpoint;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Main {
 
